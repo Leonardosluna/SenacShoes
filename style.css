@@ -1,0 +1,11 @@
+/* Estilização globais */
+body{
+    background-color: darkkhaki;
+}
+
+/* Estilização do conteúdo */
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
