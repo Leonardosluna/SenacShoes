@@ -1,11 +1,73 @@
 /* Estilização globais */
 body{
-    background-color: darkkhaki;
+    background-color:  #F7F7F7;
+    margin: 0px;
+    margin-top: 60px;
+    display: grid; /*Faz com que o container se comporte em grade */
+    font-family: Arial, Helvetica, sans-serif;
+     gap: 60px; /*Espaçamento para todos os lados entre os componentes */
+     justify-items: center; /*centraliza na hoizontal todos os itens*/
+    }
+
+img{
+    max-width: 100%; /*fazeer a imagem ocupar 100% do Bloco*/
+    display: block; /*definir o elemento como bloco*/
 }
+
+a{
+    text-decoration: none; /* Retira a decoração do link (underline)*/
+}
+
+p, h1, h2, h3{
+    margin: 0px; /*Retira o espaçament externo que vem por padrão*/
+}
+
+p{
+    font-size: 20px;
+}
+
+.menu {
+    display: flex; /*Garante que os links sempre estarão um do lado do outro*/
+    gap: 20px;
+    justify-content: center;
+    
+}
+.menu a{
+    text-transform: uppercase;
+    background-color: #FFF;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    background-color: #9353FF;
+
+}
+
 
 /* Estilização do conteúdo */
 .conteudo{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 1000PX;
 
+}
+.botao {
+    background-color: #9353FF;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.botao:hover{
+    background-color: chocolate;
+}
+
+.rodape {
+    background-color: #FFF;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
 }
