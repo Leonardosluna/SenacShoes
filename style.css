@@ -1,6 +1,6 @@
 /* Estilização globais */
 body{
-    background-color:  #F7F7F7;
+    background-color:  #e4e1e1;
     margin: 0px;
     margin-top: 60px;
     display: grid; /*Faz com que o container se comporte em grade */
@@ -51,23 +51,74 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000PX;
-
+    
+    
 }
 .botao {
     background-color: #9353FF;
     padding: 15px 30px;
-    border-radius: 8px;
+    border-radius: 4px;
     text-transform: uppercase;
     color: #FFF;
+    display: grid;
+    place-self: end;
+   
 }
 
 .botao:hover{
     background-color: chocolate;
+    padding: 30px;
+
 }
+
+
 
 .rodape {
     background-color: #FFF;
     padding: 40px;
     text-align: center;
-    width: 100%;
+    width: 95%;
+
 }
+/* Estilização da introdução */
+.introducao{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 40px;
+    align-content: center;
+    gap: 20px;
+    
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    font-size: 64px;
+    text-align: end;
+    padding: 40px;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.2);    
+}
+
+/* Estilização das vantagens */
+.vantagens{
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.vantagens-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+
+}
+
+.vantagens-item p{
+    grid-column: 2;
+}
+h1{
+    
+    text-align: right;
+}
+
